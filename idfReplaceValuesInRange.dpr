@@ -28,7 +28,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TMainForm, MainForm);
-  if (not ParamCount() = 5) then
+  if (not (ParamCount() = 5)) then
     ShowArgumentsAndTerminate;
 
   MinValue := 0;
